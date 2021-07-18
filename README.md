@@ -2,8 +2,18 @@
 API data pesantren from Kemenag Indonesia
 
 ## API Endpoint
-### GET /provinsi.json
-Get All Provinsi
+```
+Base URL: https://api-pesantren-indonesia.vercel.app
+```
+|Endpoint|Method|URL Example|
+|---|---|---|
+|[/provinsi.json](#get-all-provinsi)|GET|https://api-pesantren-indonesia.vercel.app/provinsi.json|
+|[/kabupaten/{id_provinsi}.json](#get-kabupaten-kota-by-id-provinsi)|GET|https://api-pesantren-indonesia.vercel.app/kabupaten/32.json|
+|[/pesantren/{id_kab_kota}.json](#get-pesantren-by-id-kabupaten-kota)|GET|https://api-pesantren-indonesia.vercel.app/pesantren/3206.json|
+### Get All Provinsi
+```
+GET /provinsi.json
+```
 ```js
 // example : /provinsi.json
 [
@@ -27,8 +37,10 @@ Get All Provinsi
 ]
 ```
 
-### GET /kabupaten/{id_provinsi}.json
-Get Kabupaten/Kota by Id Provinsi
+### Get Kabupaten Kota by Id Provinsi
+```
+GET /kabupaten/{id_provinsi}.json
+```
 ```js
 // example: `/kabupaten/32.json` (Jawa Barat)
 [
@@ -56,8 +68,10 @@ Get Kabupaten/Kota by Id Provinsi
 ]
 ```
 
-### GET /pesantren/{id_kab_kota}.json
-Get Pesantren By Id Kabupaten/Kota
+### Get Pesantren By Id Kabupaten Kota
+```
+GET /pesantren/{id_kab_kota}.json
+```
 ```js
 // example: `/pesantren/3206.json` (Kab. Tasikmalaya)
 [
